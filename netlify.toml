@@ -1,0 +1,9 @@
+# Site statique : pas de compilation, Netlify publie le dossier tel quel.
+[build]
+  publish = "."
+
+# Les contenus sont relus à chaque visite, pour que les ajouts depuis /admin apparaissent tout de suite.
+[[headers]]
+  for = "/content/*"
+  [headers.values]
+    Cache-Control = "no-cache"

@@ -1,0 +1,26 @@
+{
+  "items": [
+    {
+      "titre": "Exemple — Mixtape L'Otantik Style",
+      "auteur": "Madin Musik",
+      "annee": 2010,
+      "type": "Mixtape",
+      "image": "https://images.unsplash.com/photo-1539375665275-f9de415ef9ac?auto=format&fit=crop&w=800&q=80",
+      "lien": "",
+      "audio": "",
+      "liste_titres": "1. Intro\n2. Titre exemple\n3. Titre exemple",
+      "description": "Exemple à remplacer : une mixtape, un album ou une compilation, avec sa pochette et sa liste de titres."
+    },
+    {
+      "titre": "Exemple — Album zouk",
+      "auteur": "Nom du groupe",
+      "annee": 1986,
+      "type": "Album",
+      "image": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=80",
+      "lien": "",
+      "audio": "",
+      "liste_titres": "",
+      "description": "Exemple à remplacer."
+    }
+  ]
+}

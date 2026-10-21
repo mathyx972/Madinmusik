@@ -1,0 +1,13 @@
+{
+  "items": [
+    {
+      "titre": "Exemple — Émission Madin Musik n°1",
+      "date": "2026-10-21",
+      "invite": "Nom de l'invité",
+      "image": "https://images.unsplash.com/photo-1487180144351-b8472da7d491?auto=format&fit=crop&w=800&q=80",
+      "lien": "",
+      "audio": "",
+      "description": "Exemple à remplacer : radio, interview, session ou podcast."
+    }
+  ]
+}

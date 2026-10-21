@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "titre": "Exemple — Flyer de soirée sound system",
+      "type": "Flyer",
+      "annee": 2008,
+      "image": "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?auto=format&fit=crop&w=800&q=80",
+      "credit": "Collection de la personne qui a déposé la pièce",
+      "description": "Exemple à remplacer : où, quand, qui jouait, d'où vient la pièce."
+    },
+    {
+      "titre": "Exemple — Photo de studio",
+      "type": "Photo",
+      "annee": 2011,
+      "image": "https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=800&q=80",
+      "credit": "",
+      "description": "Exemple à remplacer."
+    }
+  ]
+}

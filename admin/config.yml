@@ -1,0 +1,250 @@
+# Page d'administration de Madin Musik (Decap CMS)
+# Dépôt GitHub du site : pseudo/nom-du-dépôt.
+backend:
+  name: github
+  repo: mathyx972/madinmusik
+  branch: main
+  commit_messages:
+    update: "Mise à jour : {{collection}}"
+    uploadMedia: "Ajout du fichier {{path}}"
+
+locale: fr
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+collections:
+  - name: sons
+    label: "🎵 Sons"
+    description: "Les morceaux de la rubrique Sons. Le premier de la liste s'affiche en premier sur le site."
+    editor: { preview: false }
+    files:
+      - name: sons
+        label: "Liste des sons"
+        file: "content/sons.json"
+        fields:
+          - label: "Sons"
+            name: items
+            widget: list
+            add_to_top: true
+            summary: "{{fields.titre}} — {{fields.artiste}} ({{fields.annee}})"
+            fields:
+              - { label: "Titre", name: titre, widget: string }
+              - { label: "Artiste", name: artiste, widget: string }
+              - { label: "Année", name: annee, widget: number, value_type: int, min: 1900, max: 2100, required: false }
+              - { label: "Genre", name: genre, widget: select, required: false, options: ["Bèlè", "Biguine", "Mazurka", "Kadans", "Zouk", "Reggae", "Dancehall", "Dancehall underground", "Shatta", "Autre"] }
+              - { label: "Image ou pochette", name: image, widget: image, required: false }
+              - { label: "Lien d'écoute (YouTube, SoundCloud, Spotify…)", name: lien, widget: string, required: false }
+              - { label: "Fichier audio (MP3 court, facultatif)", name: audio, widget: file, required: false }
+              - { label: "Description", name: description, widget: text, required: false }
+              - { label: "À la une (utilisé par la démo Madin ID)", name: a_la_une, widget: boolean, default: false, required: false }
+
+  - name: mixtapes
+    label: "💿 Albums & mixtapes"
+    editor: { preview: false }
+    files:
+      - name: mixtapes
+        label: "Albums, mixtapes et compilations"
+        file: "content/mixtapes.json"
+        fields:
+          - label: "Projets"
+            name: items
+            widget: list
+            add_to_top: true
+            summary: "{{fields.titre}} — {{fields.auteur}} ({{fields.annee}})"
+            fields:
+              - { label: "Titre", name: titre, widget: string }
+              - { label: "Artiste, DJ ou sound system", name: auteur, widget: string, required: false }
+              - { label: "Année", name: annee, widget: number, value_type: int, min: 1900, max: 2100, required: false }
+              - { label: "Type", name: type, widget: select, default: "Mixtape", options: ["Mixtape", "Album", "Compilation", "EP", "Single"] }
+              - { label: "Pochette", name: image, widget: image, required: false }
+              - { label: "Lien d'écoute", name: lien, widget: string, required: false }
+              - { label: "Fichier audio (facultatif)", name: audio, widget: file, required: false }
+              - { label: "Liste des titres (un par ligne)", name: liste_titres, widget: text, required: false }
+              - { label: "Description", name: description, widget: text, required: false }
+
+  - name: videos
+    label: "🎬 Vidéos"
+    editor: { preview: false }
+    files:
+      - name: videos
+        label: "Clips et lives"
+        file: "content/videos.json"
+        fields:
+          - label: "Vidéos"
+            name: items
+            widget: list
+            add_to_top: true
+            summary: "{{fields.titre}} — {{fields.artiste}}"
+            fields:
+              - { label: "Titre", name: titre, widget: string }
+              - { label: "Artiste", name: artiste, widget: string, required: false }
+              - { label: "Année", name: annee, widget: number, value_type: int, min: 1900, max: 2100, required: false }
+              - { label: "Lien YouTube (la vidéo s'affiche sur le site)", name: lien_video, widget: string, required: false }
+              - { label: "Image (facultatif : sinon l'image YouTube est utilisée)", name: image, widget: image, required: false }
+              - { label: "Description", name: description, widget: text, required: false }
+
+  - name: emissions
+    label: "📻 Émissions"
+    editor: { preview: false }
+    files:
+      - name: emissions
+        label: "Émissions, interviews, podcasts"
+        file: "content/emissions.json"
+        fields:
+          - label: "Émissions"
+            name: items
+            widget: list
+            add_to_top: true
+            summary: "{{fields.titre}} ({{fields.date}})"
+            fields:
+              - { label: "Titre", name: titre, widget: string }
+              - { label: "Date", name: date, widget: datetime, date_format: "DD/MM/YYYY", time_format: false, format: "YYYY-MM-DD", required: false }
+              - { label: "Invité", name: invite, widget: string, required: false }
+              - { label: "Image", name: image, widget: image, required: false }
+              - { label: "Lien d'écoute", name: lien, widget: string, required: false }
+              - { label: "Fichier audio (facultatif)", name: audio, widget: file, required: false }
+              - { label: "Description", name: description, widget: text, required: false }
+
+  - name: artistes
+    label: "🎤 Artistes & DJ"
+    editor: { preview: false }
+    files:
+      - name: artistes
+        label: "Fiches artistes"
+        file: "content/artistes.json"
+        fields:
+          - label: "Artistes"
+            name: items
+            widget: list
+            add_to_top: true
+            summary: "{{fields.nom}} — {{fields.role}}"
+            fields:
+              - { label: "Nom", name: nom, widget: string }
+              - { label: "Rôle (chanteuse, DJ, producteur…)", name: role, widget: string, required: false }
+              - { label: "Ville", name: ville, widget: string, required: false }
+              - { label: "Période d'activité", name: actif, widget: string, required: false, hint: "Exemple : 2006 → aujourd'hui" }
+              - { label: "Styles", name: genres, widget: string, required: false }
+              - { label: "Photo", name: photo, widget: image, required: false }
+              - { label: "Biographie", name: bio, widget: text, required: false }
+              - { label: "Lien (réseau social, site)", name: lien, widget: string, required: false }
+
+  - name: archives
+    label: "🗂️ Archives"
+    editor: { preview: false }
+    files:
+      - name: archives
+        label: "Pièces versées au fonds"
+        file: "content/archives.json"
+        fields:
+          - label: "Pièces"
+            name: items
+            widget: list
+            add_to_top: true
+            summary: "{{fields.type}} · {{fields.titre}} ({{fields.annee}})"
+            fields:
+              - { label: "Titre", name: titre, widget: string }
+              - { label: "Type", name: type, widget: select, default: "Flyer", options: ["Flyer", "Affiche", "Photo", "Pochette", "Mixtape", "Vidéo", "Article", "Interview", "Témoignage", "Document"] }
+              - { label: "Année", name: annee, widget: number, value_type: int, min: 1900, max: 2100, required: false }
+              - { label: "Image / scan", name: image, widget: image, required: false }
+              - { label: "Crédit (d'où vient la pièce)", name: credit, widget: string, required: false }
+              - { label: "Description", name: description, widget: text, required: false }
+
+  - name: index
+    label: "📚 L'index (fiches)"
+    editor: { preview: false }
+    files:
+      - name: index
+        label: "Fiches de l'étagère"
+        file: "content/index.json"
+        fields:
+          - label: "Fiches"
+            name: items
+            widget: list
+            summary: "{{fields.nom}}"
+            fields:
+              - label: "Classeur"
+                name: classeur
+                widget: select
+                options:
+                  - { label: "A · Tambour et danse", value: "a" }
+                  - { label: "B · Bal et salon", value: "b" }
+                  - { label: "C · Musiques actuelles", value: "c" }
+                  - { label: "D · Instruments et supports", value: "d" }
+              - { label: "Nom", name: nom, widget: string }
+              - { label: "Texte de la fiche", name: texte, widget: text }
+              - label: "Illustration"
+                name: illustration
+                widget: select
+                default: "flyer"
+                options:
+                  - { label: "Ronde de bèlè", value: "ronde" }
+                  - { label: "Tanbou", value: "tanbou" }
+                  - { label: "Cassette", value: "tape" }
+                  - { label: "Flyer", value: "flyer" }
+                  - { label: "Chacha", value: "chacha" }
+                  - { label: "Enceinte de sound system", value: "speaker" }
+
+  - name: pubs
+    label: "📣 Publicités"
+    editor: { preview: false }
+    files:
+      - name: pubs
+        label: "Emplacements publicitaires"
+        file: "content/pubs.json"
+        fields:
+          - label: "Grande bannière (sous le média)"
+            name: banniere
+            widget: object
+            fields:
+              - { label: "Afficher", name: actif, widget: boolean, default: true }
+              - { label: "Surtitre", name: surtitre, widget: string, required: false }
+              - { label: "Titre", name: titre, widget: string }
+              - { label: "Titre en orange", name: titre_accent, widget: string, required: false }
+              - { label: "Texte", name: texte, widget: text, required: false }
+              - { label: "Texte du bouton", name: bouton, widget: string, required: false }
+              - { label: "Lien de l'annonceur (vide = fenêtre « réserver »)", name: lien, widget: string, required: false }
+              - { label: "Image", name: image, widget: image, required: false }
+          - label: "Bandeau (avant l'appel aux archives)"
+            name: bandeau
+            widget: object
+            fields:
+              - { label: "Afficher", name: actif, widget: boolean, default: true }
+              - { label: "Titre", name: titre, widget: string }
+              - { label: "Suite en orange", name: titre_accent, widget: string, required: false }
+              - { label: "Texte du bouton", name: bouton, widget: string, required: false }
+              - { label: "Lien de l'annonceur", name: lien, widget: string, required: false }
+
+  - name: reglages
+    label: "⚙️ Textes du site"
+    editor: { preview: false }
+    files:
+      - name: reglages
+        label: "Accueil, à la une, contact"
+        file: "content/reglages.json"
+        fields:
+          - { label: "Bandeau tout en haut", name: bandeau_haut, widget: string }
+          - { label: "Grand titre, ligne 1", name: titre_ligne1, widget: string }
+          - { label: "Grand titre, ligne 2 (en orange)", name: titre_ligne2, widget: string }
+          - { label: "Texte d'accroche", name: accroche, widget: text }
+          - label: "Recherches rapides (sous la barre de recherche)"
+            name: recherches_rapides
+            widget: list
+            field: { label: "Mot", name: mot, widget: string }
+          - label: "À la une (dossier La bibliothèque)"
+            name: a_la_une
+            widget: object
+            fields:
+              - { label: "Surtitre", name: surtitre, widget: string, required: false }
+              - { label: "Titre", name: titre, widget: string }
+              - { label: "Texte", name: texte, widget: text, required: false }
+              - { label: "Image", name: image, widget: image, required: false }
+              - { label: "Fiche de l'index à ouvrir (nom exact)", name: fiche, widget: string, required: false }
+          - { label: "Adresse e-mail de contact", name: email, widget: string }
+          - label: "Réseaux sociaux (pied de page)"
+            name: reseaux
+            widget: list
+            required: false
+            summary: "{{fields.nom}}"
+            fields:
+              - { label: "Nom (Instagram, Facebook…)", name: nom, widget: string }
+              - { label: "Lien", name: lien, widget: string }

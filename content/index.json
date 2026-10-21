@@ -1,0 +1,29 @@
+{
+  "items": [
+    { "classeur": "a", "nom": "Bèlè", "texte": "Chant, tambour et danse, hérités des habitations et toujours vivants, notamment dans le nord atlantique de l'île.", "illustration": "ronde" },
+    { "classeur": "a", "nom": "Kalennda", "texte": "Danse de tambour du répertoire bèlè, parmi les plus anciennes de l'île.", "illustration": "ronde" },
+    { "classeur": "a", "nom": "Danmyé", "texte": "Le combat dansé au son du tambour, qu'on appelle aussi ladja.", "illustration": "ronde" },
+    { "classeur": "a", "nom": "Bélia", "texte": "Danse du répertoire bèlè, menée par le chanteur et reprise en chœur.", "illustration": "ronde" },
+    { "classeur": "a", "nom": "Lalin klè", "texte": "Le répertoire des veillées de pleine lune, chanté et dansé dehors.", "illustration": "ronde" },
+    { "classeur": "a", "nom": "Chanté Nwèl", "texte": "Les chants de Noël créoles qu'on reprend en famille et entre voisins pendant l'Avent.", "illustration": "chacha" },
+    { "classeur": "b", "nom": "Biguine", "texte": "Née à Saint-Pierre à la fin du XIXe siècle, portée par la clarinette, le trombone et le banjo.", "illustration": "tape" },
+    { "classeur": "b", "nom": "Mazurka créole", "texte": "La mazurka européenne, transformée dans les bals de l'île.", "illustration": "tape" },
+    { "classeur": "b", "nom": "Valse créole", "texte": "Une valse plus vive, au programme de tous les bals d'autrefois.", "illustration": "tape" },
+    { "classeur": "b", "nom": "Haute-taille", "texte": "Le quadrille martiniquais, dansé en figures sous les ordres d'un commandeur.", "illustration": "ronde" },
+    { "classeur": "b", "nom": "Chouval bwa", "texte": "La musique des manèges de chevaux de bois, au rythme du tibwa.", "illustration": "chacha" },
+    { "classeur": "b", "nom": "Jazz créole", "texte": "La rencontre de la biguine et du jazz, en club comme en concert.", "illustration": "tape" },
+    { "classeur": "c", "nom": "Kadans", "texte": "Les années 1970, nourries d'échanges avec la Dominique et Haïti.", "illustration": "tape" },
+    { "classeur": "c", "nom": "Zouk", "texte": "Né dans les années 1980 entre Martinique et Guadeloupe, et parti faire le tour du monde.", "illustration": "tape" },
+    { "classeur": "c", "nom": "Zouk love", "texte": "Le zouk ralenti, celui des slows et des déclarations.", "illustration": "tape" },
+    { "classeur": "c", "nom": "Ragga dancehall", "texte": "La scène underground des années 2000, le cœur de L'Otantik Style.", "illustration": "flyer" },
+    { "classeur": "c", "nom": "Sound system", "texte": "Les murs d'enceintes, les selectas et les clashs qui faisaient les nuits.", "illustration": "speaker" },
+    { "classeur": "c", "nom": "Shatta", "texte": "Déclinaison martiniquaise du dancehall, plus dépouillée et percussive, devenue une signature de la jeune génération.", "illustration": "speaker" },
+    { "classeur": "d", "nom": "Tanbou bèlè", "texte": "Le tambour à une peau, joué assis à cheval sur l'instrument.", "illustration": "tanbou" },
+    { "classeur": "d", "nom": "Tibwa", "texte": "Deux baguettes frappées sur un bambou ou sur le flanc du tambour.", "illustration": "tanbou" },
+    { "classeur": "d", "nom": "Chacha", "texte": "Le hochet qui tient le temps, rempli de graines.", "illustration": "chacha" },
+    { "classeur": "d", "nom": "Mixtape", "texte": "CD gravés et cassettes, faces A et B, qui passaient de main en main.", "illustration": "tape" },
+    { "classeur": "d", "nom": "Flyer", "texte": "Les affiches de soirées et de sound clashs, souvent jetées le lendemain.", "illustration": "flyer" },
+    { "classeur": "d", "nom": "Dubplate", "texte": "Le morceau exclusif enregistré pour un seul sound system, joué pour faire la différence en clash.", "illustration": "speaker" },
+    { "classeur": "d", "nom": "Radio libre", "texte": "Les radios locales qui ont porté les sons du moment.", "illustration": "tape" }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "nom": "Exemple — Nom d'une artiste",
+      "role": "Chanteuse",
+      "ville": "Le Lamentin",
+      "actif": "2006 → aujourd'hui",
+      "genres": "Dancehall, Shatta",
+      "photo": "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=80",
+      "bio": "Exemple à remplacer : biographie, parcours, titres marquants.",
+      "lien": ""
+    },
+    {
+      "nom": "Exemple — Nom d'un DJ / sound system",
+      "role": "DJ · Sound system",
+      "ville": "Fort-de-France",
+      "actif": "2004 → 2014",
+      "genres": "Dancehall underground",
+      "photo": "https://images.unsplash.com/photo-1487180144351-b8472da7d491?auto=format&fit=crop&w=800&q=80",
+      "bio": "Exemple à remplacer.",
+      "lien": ""
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+Ce dossier reçoit les images et fichiers audio ajoutés depuis la page /admin.
+Ne pas le supprimer.

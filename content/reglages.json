@@ -1,0 +1,16 @@
+{
+  "bandeau_haut": "L’OTANTIK STYLE — DEPUIS 2005",
+  "titre_ligne1": "Notre musique.",
+  "titre_ligne2": "Tous ses dossiers.",
+  "accroche": "Des premiers classiques aux sons d’aujourd’hui. Artistes, morceaux, flyers, mixtapes, souvenirs : plongez dans la mémoire musicale de la Martinique.",
+  "recherches_rapides": ["Dancehall", "Zouk", "Bèlè", "Biguine", "Mixtapes"],
+  "a_la_une": {
+    "surtitre": "À LA UNE / FONDS 01",
+    "titre": "La scène reggae-dancehall, toute une histoire.",
+    "texte": "Retrouvez l'énergie des premiers sons underground, des DJ, des artistes et des nuits qui ont marqué une génération.",
+    "image": "https://images.unsplash.com/photo-1487180144351-b8472da7d491?auto=format&fit=crop&w=1000&q=85",
+    "fiche": "Ragga dancehall"
+  },
+  "email": "contact@madinmusik.fr",
+  "reseaux": []
+}
