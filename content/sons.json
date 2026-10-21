@@ -2,6 +2,14 @@
   "items": [
     {
       "a_la_une": false,
+      "titre": "2012 Watts Riddim",
+      "artiste": "Mafio House",
+      "annee": 2012,
+      "genre": "Dancehall",
+      "audio": "/images/uploads/2012-watts-elephant-man-version-mafio-house-96bpm.mp3"
+    },
+    {
+      "a_la_une": false,
       "titre": "Gyal ou ka fe",
       "artiste": "Politik Nai ft T-JY",
       "annee": 2011,
