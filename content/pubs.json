@@ -1,13 +1,13 @@
 {
   "banniere": {
     "actif": true,
-    "surtitre": "VOTRE CAMPAGNE ICI",
-    "titre": "Votre marque.",
-    "titre_accent": "Au rythme du pays.",
+    "surtitre": "Baccha Festival est de retour",
+    "titre": "Baccha Festival",
+    "titre_accent": "",
     "texte": "Un espace publicitaire pensé pour s'intégrer naturellement au média.",
     "bouton": "DÉCOUVRIR CET EMPLACEMENT ↗",
     "lien": "",
-    "image": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=1100&q=85"
+    "image": "/images/uploads/baccha-pub.png"
   },
   "bandeau": {
     "actif": true,
