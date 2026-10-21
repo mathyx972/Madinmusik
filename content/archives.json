@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "type": "Flyer",
+      "titre": "X-MAN - Concert au Bataclan",
+      "annee": 2011,
+      "image": "/images/uploads/affiche-xman-copie.jpg",
+      "credit": "Reçu par mail par l'artiste en 2011"
+    },
+    {
       "titre": "Exemple — Flyer de soirée sound system",
       "type": "Flyer",
       "annee": 2008,
